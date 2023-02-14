@@ -1,0 +1,76 @@
+@font-face {
+    font-family: importFont;
+    src: url(peignot.regular.ttf);
+}
+  
+body{
+    background: #eeeae3;
+    font-family: importFont;
+}
+
+h1 {
+    font-family: importFont;
+    font-size: 50px;
+    color: #7c9aa0;
+}
+
+h3 {
+    font-family: importFont;
+    font-size: 25px;
+    color: #7c9aa0;
+}
+
+/* navbar */
+.menu{
+    text-align:left; 
+    margin-top:50px;
+  }
+  li{
+    padding-right:40px;
+    font-size: 25px;
+    display:inline;
+    
+  }
+  a{
+    color:#7c9aa0;
+    padding:10px;
+    text-decoration:none;
+  }
+  a:hover{
+    border-left:3px solid #7c9aa0;
+    color:#7c9aa0;
+  }
+
+  a:active{ 
+    background-color: white; }
+
+img{
+  margin-left: 8%;
+  margin-top:10%;
+  border-radius: 100px;
+  width: 80%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.food{
+  margin-left: 50px;
+}
+
+
