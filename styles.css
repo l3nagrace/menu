@@ -4,7 +4,6 @@
 }
   
 body{
-    background: #eeeae3;
     font-family: importFont;
 }
 
@@ -16,61 +15,106 @@ h1 {
 
 h3 {
     font-family: importFont;
-    font-size: 25px;
+    font-size: 35px;
     color: #7c9aa0;
 }
 
+/* container image */
+.bg-img {
+  background-image: url("banner.png");
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 /* navbar */
-.menu{
-    text-align:left; 
-    margin-top:50px;
+nav {
+      display: flex;
+      justify-content: space-between;
+      color: #7c9aa0;
+      padding: 0px;
+
   }
-  li{
-    padding-right:40px;
+
+  nav li {
+    padding-right:30px;
     font-size: 25px;
     display:inline;
     
   }
-  a{
-    color:#7c9aa0;
-    padding:10px;
+
+  nav a {
     text-decoration:none;
   }
-  a:hover{
+  
+  nav a, nav a:visited, nav a:link {
+      color: grey;
+  }
+  
+  nav a:active {
+      color: teal;
+  }
+  
+  nav a:hover {
     border-left:3px solid #7c9aa0;
-    color:#7c9aa0;
+    color: teal;
+  }
+  
+  ul.menu {
+      display: flex;
+      list-style: none;
+  
   }
 
-  a:active{ 
-    background-color: white; }
-
 img{
-  margin-left: 8%;
-  margin-top:10%;
-  border-radius: 100px;
-  width: 80%;
-}
-
-.column {
-  float: left;
-  width: 50%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
+  width: 100%;
 }
 
 .food{
   margin-left: 50px;
+}
+
+/* test boxes */
+* {
+  box-sizing: border-box;
+  /* padding: 3px; */
+  margin: 25px;
+}
+
+#coffee {
+  background-color: #f5f1ea;
+  padding-top: 25px;
+  padding-bottom: 35px;
+
+}
+
+#smoothies {
+  background-color: #f2e7de;
+  padding-top: 25px;
+  padding-bottom: 35px;
+
+}
+
+#pastries {
+  background-color: #dee4e8;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+
+}
+
+section {
+  padding:0px;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-shrink: 1;
 }
 
 
